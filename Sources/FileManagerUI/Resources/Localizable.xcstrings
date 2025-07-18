@@ -1,0 +1,108 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "%lld selected" : {
+
+    },
+    "Access Denied" : {
+
+    },
+    "Cancel" : {
+
+    },
+    "Create" : {
+
+    },
+    "Created: %@" : {
+
+    },
+    "Done" : {
+
+    },
+    "Error" : {
+
+    },
+    "Extension: %@" : {
+
+    },
+    "File name" : {
+
+    },
+    "Files: %lld" : {
+
+    },
+    "Folder is empty" : {
+
+    },
+    "Folder name" : {
+
+    },
+    "Folders: %lld" : {
+
+    },
+    "Go to App Container" : {
+
+    },
+    "Grid View" : {
+
+    },
+    "Hide Hidden Files" : {
+
+    },
+    "List View" : {
+
+    },
+    "MIME Type: %@" : {
+
+    },
+    "Modified: %@" : {
+
+    },
+    "New File" : {
+
+    },
+    "New Folder" : {
+
+    },
+    "New name" : {
+
+    },
+    "Path: %@" : {
+
+    },
+    "Preview" : {
+
+    },
+    "Refresh" : {
+
+    },
+    "Rename" : {
+
+    },
+    "Select" : {
+
+    },
+    "Share" : {
+
+    },
+    "Show Hidden Files" : {
+
+    },
+    "Size: %@" : {
+
+    },
+    "This folder contains no files or folders" : {
+
+    },
+    "Total Size: %@" : {
+
+    },
+    "Type: %@" : {
+
+    },
+    "Type: Folder" : {
+
+    }
+  },
+  "version" : "1.1"
+}
