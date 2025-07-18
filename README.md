@@ -2,6 +2,8 @@
 
 A SwiftUI-based file manager component for iOS apps that provides a native file browsing experience with modern UI design.
 
+<img src=".github/example.png" alt="FileManagerUI Example" width="300">
+
 ## Features
 
 ### 📁 File System Navigation
