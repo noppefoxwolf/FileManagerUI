@@ -29,11 +29,6 @@ struct FileItemGridCell: View {
         .frame(minHeight: 100, alignment: .top)  // Fixed height for consistent grid layout
         .padding(8)
         .background(Color(.systemBackground))
-        .cornerRadius(8)
-        .overlay(
-            RoundedRectangle(cornerRadius: 8)
-                .stroke(isSelected ? Color.blue : Color.clear, lineWidth: 2)
-        )
         .contentShape(RoundedRectangle(cornerRadius: 8))
     }
 }
