@@ -1,12 +1,13 @@
 import QuickLook
 import QuickLookThumbnailing
 import SwiftUI
-import UIKit
 
 struct FileListThumbnailView: View {
     let item: FileItem
     @State private var thumbnail: UIImage?
     @State private var isLoading = false
+    @Environment(\.displayScale)
+    var displayScale
 
     var body: some View {
         Group {
@@ -45,24 +46,20 @@ struct FileListThumbnailView: View {
         let request = QLThumbnailGenerator.Request(
             fileAt: item.url,
             size: CGSize(width: 120, height: 120),
-            scale: UIScreen.main.scale,
+            scale: displayScale,
             representationTypes: .thumbnail
         )
 
         Task {
             do {
-                let representation = try await QLThumbnailGenerator.shared
-                    .generateBestRepresentation(
+                let generator = QLThumbnailGenerator.shared
+                let representation = try await generator.generateBestRepresentation(
                         for: request
                     )
-                await MainActor.run {
-                    isLoading = false
-                    thumbnail = representation.uiImage
-                }
+                isLoading = false
+                thumbnail = representation.uiImage
             } catch {
-                await MainActor.run {
-                    isLoading = false
-                }
+                isLoading = false
             }
         }
     }
